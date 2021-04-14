@@ -6,11 +6,26 @@
 */
 
 /* Setting up basic template for page (header & footer) */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+header {
+  border-radius: 0 0 15px 15px;
+}
+
+footer {
+  border-radius: 15px 15px 0 0;
+}
 
 header, footer {
   background: linear-gradient(90deg,#D8E4F4,#A0D0EC);
@@ -20,26 +35,36 @@ header, footer {
 
 main {
   background-color:#F7FBFC;
-}
-
-header, main, footer {
-  margin: 1em;
-  padding: 2em;
   border-radius: 15px;
 }
 
-header ul, footer ul {
+header img {
+  width: 10%;
+  margin-right: 30%;
+}
+
+header, main, footer {
+  margin-bottom: 1em;
+  padding: 2em;
+}
+
+nav {
+  width: 40%;
+  float: right;
+}
+
+nav ul, footer ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
 
-header ul li, footer ul li {
+nav ul li, footer ul li {
   display: inline-block;
   padding: 20px; 
 }
 
-header ul li a, footer ul li a{
+nav ul li a, footer ul li a{
   color: black;
   padding: 15px;
 }
