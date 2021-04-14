@@ -1,17 +1,19 @@
 /*
-#F7FBFC
+#F7FBFC - lightest
 #D8E4F4
 #A0D0EC
-#6E9BCC
+#6E9BCC - darkest
 */
 
+/* Setting up basic template for page (header & footer) */
 * {
   margin: 0;
   padding: 0;
 }
 
+
 header, footer {
-  background-color: #D8E4F4;
+  background: linear-gradient(90deg,#D8E4F4,#A0D0EC);
   display: flex;
   justify-content: center;
 }
@@ -32,9 +34,18 @@ header ul, footer ul {
   justify-content: center;
 }
 
-header li, footer li {
+header ul li, footer ul li {
   display: inline-block;
+  padding: 20px; 
+}
+
+header ul li a, footer ul li a{
+  color: black;
   padding: 15px;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 
