@@ -1,0 +1,40 @@
+/*
+#F7FBFC
+#D8E4F4
+#A0D0EC
+#6E9BCC
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #D8E4F4;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color:#F7FBFC;
+}
+
+header, main, footer {
+  margin: 1em;
+  padding: 2em;
+  border-radius: 15px;
+}
+
+header ul, footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header li, footer li {
+  display: inline-block;
+  padding: 15px;
+}
+
+
