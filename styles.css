@@ -19,23 +19,41 @@ html {
   padding: 0;
 }
 
+body {
+  background-image: url("images/philipp-katzenberger-1920-1200.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body img {
+  width:700px;
+}
+
 header {
   border-radius: 0 0 15px 15px;
+  position: fixed;
+  width: 100%;
 }
 
 footer {
   border-radius: 15px 15px 0 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 header, footer {
-  background: linear-gradient(90deg,#D8E4F4,#A0D0EC);
+  background: rgb(160, 208, 236, 0.35);
   display: flex;
   justify-content: center;
 }
 
 main {
-  background-color:#F7FBFC;
+  color:#F7FBFC;
   border-radius: 15px;
+  margin-bottom: 1em;
+  padding: 10em 2em;
+  
 }
 
 header img {
@@ -43,8 +61,7 @@ header img {
   margin-right: 30%;
 }
 
-header, main, footer {
-  margin-bottom: 1em;
+header, footer {
   padding: 2em;
 }
 
