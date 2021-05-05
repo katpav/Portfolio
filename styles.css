@@ -21,6 +21,11 @@ html {
 
 body {
   background: url("images/irina-iriser-1920_1280.jpg") no-repeat center/cover;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  line-height: 1.5;
+  color:#F7FBFC; 
 }
 
 body img {
@@ -51,11 +56,9 @@ header, footer {
 }
 
 main {
-  color:#F7FBFC;
   border-radius: 15px;
   margin-bottom: 1em;
   padding: 9em 2em;
-  
 }
 
 header img {
@@ -80,12 +83,35 @@ nav ul li, footer ul li {
 }
 
 nav ul li a, footer ul li a{
-  color: black;
+  color: white;
   padding: 15px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-shadow: 16px 22px 11px rgb(209, 231, 9);
+}
+
+h1, h2 {
+  font-family: 'Bebas Neue';
+}
+
+h2 {
+  font-size: 18px;
+}
+
+#home {
+  text-align: center;
+  margin: 50px;
+}
+
+#home h1 {
+  font-size: 60px;
+}
+
+#home h2 {
+  font-size: 40px;
 }
 
 
