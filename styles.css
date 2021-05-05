@@ -21,10 +21,10 @@ html {
 
 body {
   background: url("images/irina-iriser-1920_1280.jpg") no-repeat center/cover;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 200;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   line-height: 1.5;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   color:#F7FBFC; 
 }
 
@@ -32,27 +32,26 @@ body img {
   width:800px;
 }
 
+header, footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
 header {
+  background: rgb(160, 208, 236, 0.35);
   border-radius: 0 0 15px 15px;
   backdrop-filter: blur(2px);
   box-shadow: 0 8px 6px -8px #030d18;
   position: fixed;
-  width: 100%;
+  font-size: 20px;
 }
 
 footer {
-  border-radius: 15px 15px 0 0;
-  box-shadow: 0 -8px 6px -8px #030d18;
+  border-top: 1px solid rgb(160, 208, 236, 0.35);
   position: relative;
   bottom: 0;
-  width: 100%;
-}
-
-header, footer {
-  background: rgb(160, 208, 236, 0.35);
-  display: flex;
-  justify-content: center;
-  padding: 20px;
 }
 
 main {
@@ -90,11 +89,13 @@ nav ul li a, footer ul li a{
 }
 
 a:hover {
-  text-shadow: 16px 22px 11px rgb(209, 231, 9);
+  color:  rgb(160, 208, 236, 0.75);
+  text-decoration: underline  rgb(160, 208, 236, 0.75) 1px;
+  text-underline-offset: 40%;
 }
 
 h1, h2 {
-  font-family: 'Bebas Neue';
+  font-family: 'Roboto', san-serif;
 }
 
 h2 {
