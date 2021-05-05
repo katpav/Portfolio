@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background: url("images/irina-iriser-1920_1280.jpg") no-repeat center/cover;
+  background: url("images/colin-lloyd-V72xxgvew-A-unsplash.jpg") no-repeat center/cover;
   font-family: 'Jost', sans-serif;
   font-weight: 200;
   line-height: 1.5;
@@ -29,7 +29,7 @@ body {
 }
 
 body img {
-  width:800px;
+  width:810px;
 }
 
 header, footer {
@@ -49,15 +49,15 @@ header {
 }
 
 footer {
-  border-top: 1px solid rgb(160, 208, 236, 0.35);
-  position: relative;
+  border-top: 2px solid rgb(160, 208, 236, 0.35);
+  position: fixed;
   bottom: 0;
 }
 
 main {
   border-radius: 15px;
   margin-bottom: 1em;
-  padding: 9em 2em;
+  padding: 2em 2em;
 }
 
 header img {
@@ -102,9 +102,15 @@ h2 {
   font-size: 18px;
 }
 
+#home, #about, #skills, #projects {
+  height:100vh;
+  padding-top: 15%;
+}
+
+/* re-writing padding here */
 #home {
   text-align: center;
-  margin-top: 15%;
+  padding-top: 20%;
 }
 
 #home h1 {
@@ -114,6 +120,7 @@ h2 {
 #home h2 {
   font-size: 40px;
 }
+
 
 
 
