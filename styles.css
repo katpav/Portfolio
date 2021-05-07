@@ -54,6 +54,13 @@ footer {
   bottom: 0;
 }
 
+footer ul li img {
+  width: 25px;
+}
+footer ul li #in {
+  width: 28px;
+}
+
 main {
   border-radius: 15px;
   margin-bottom: 1em;
@@ -95,7 +102,7 @@ a:hover {
 }
 
 h1, h2 {
-  font-family: 'Roboto', san-serif;
+  font-family: 'Montserrat', san-serif;
 }
 
 h2 {
