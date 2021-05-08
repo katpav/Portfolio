@@ -106,7 +106,7 @@ h2 {
 /* re-writing padding here */
 #home {
   text-align: center;
-  padding-top: 22%;
+  padding-top: 20%;
 }
 
 #home h1 {
@@ -115,6 +115,11 @@ h2 {
 
 #home h2 {
   font-size: 40px;
+}
+
+#home p {
+  font-size: 18px;
+  padding: 1% 21% 0;
 }
 
 #about {
