@@ -1,4 +1,4 @@
-/* Setting up basic template for page (header & footer) */
+/* CSS Reset - Universal Box Sizing with Inheritance */
 html {
 	box-sizing: border-box;
 }
@@ -6,7 +6,7 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-
+/* CSS Reset - Remove all margin, padding */
 * {
   margin: 0;
   padding: 0;
@@ -53,12 +53,6 @@ footer ul li #in {
   width: 28px;
 }
 
-main {
-  border-radius: 15px;
-  margin-bottom: 1em;
-  padding: 0 2em 2em; /* top, right & left, bottom */
-}
-
 header img {
   width: 70px;
   margin-right: 30%;
@@ -93,6 +87,11 @@ a:hover {
   text-underline-offset: 40%;
 }
 
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
 h1, h2 {
   font-family: 'Montserrat', san-serif;
 }
@@ -103,13 +102,13 @@ h2 {
 
 #home, #about, #skills, #projects {
   height: 100vh;
-  padding-top: 15%;
+  padding-top: 12%;
 }
 
 /* re-writing padding here */
 #home {
   text-align: center;
-  padding-top: 20%;
+  padding-top: 22%;
 }
 
 #home h1 {
