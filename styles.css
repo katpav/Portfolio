@@ -17,12 +17,12 @@ body {
   font-family: 'Jost', sans-serif;
   font-weight: 200;
   line-height: 1.5;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-  color:#F7FBFC;
+  text-shadow: 2px 4px 3px rgba(0,0,0,.3);
+  color:#f7fbfc;
 }
 
 body img {
-  width:1200px;
+  width: 1200px;
 }
 
 header, footer {
@@ -34,7 +34,7 @@ header, footer {
 }
 
 header {
-  background: rgb(160, 208, 236, 0.35);
+  background: rgb(160,208,236,.35);
   border-radius: 0 0 15px 15px;
   backdrop-filter: blur(2px);
   box-shadow: 0 8px 6px -8px #030d18;
@@ -42,7 +42,7 @@ header {
 }
 
 footer {
-  border-top: 2px solid rgba(255, 255, 255, 0.35);
+  border-top: 2px solid rgba(255,255,255,.35);
   bottom: 0;
 }
 
@@ -88,8 +88,8 @@ nav ul li a, footer ul li a{
 }
 
 a:hover {
-  color:  rgba(243, 221, 18, 0.7);
-  text-decoration: underline  rgba(243, 221, 18, 0.7) 1px;
+  color:  rgba(243,221,18,.7);
+  text-decoration: underline  rgba(243,221,18,.7) 1px;
   text-underline-offset: 40%;
 }
 
@@ -102,7 +102,7 @@ h2 {
 }
 
 #home, #about, #skills, #projects {
-  height:100vh;
+  height: 100vh;
   padding-top: 15%;
 }
 
