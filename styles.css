@@ -39,7 +39,7 @@ header {
   background: rgba(94, 108, 116, 0.25);
   border-radius: 0 0 15px 15px;
   backdrop-filter: blur(2px);
-  box-shadow: 0 8px 6px -8px #030d18;
+  box-shadow: 0 8px 10px -8px #030d18;
   font-size: 18px;
 }
 
