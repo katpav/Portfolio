@@ -1,4 +1,6 @@
-/* CSS Reset - Universal Box Sizing with Inheritance/The Box Model fix */
+/* CSS Reset */
+
+/* Box Sizing with Inheritance/The Box Model fix */
 html {
 	box-sizing: border-box;
 }
@@ -6,11 +8,13 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-/* CSS Reset - Remove all margin, padding */
+/* Remove all margin, padding */
 * {
   margin: 0;
   padding: 0;
 }
+
+/* General Styling */
 
 body {
   background: url("images/colin-lloyd-l.jpg") no-repeat center/cover;
@@ -32,7 +36,7 @@ header, footer {
 }
 
 header {
-  background: rgb(160,208,236,.35);
+  background: rgba(94, 108, 116, 0.25);
   border-radius: 0 0 15px 15px;
   backdrop-filter: blur(2px);
   box-shadow: 0 8px 6px -8px #030d18;
@@ -40,7 +44,6 @@ header {
 }
 
 footer {
-  border-top: 2px solid rgba(255,255,255,.35);
   bottom: 0;
 }
 
@@ -100,10 +103,23 @@ h2 {
   padding-top: 12%;
 }
 
+/* Home Page Styling */
+
 /* re-writing padding here */
 #home {
   text-align: center;
   padding-top: 20%;
+  animation: ani1 2s linear;
+}
+
+/* animation activity */
+@keyframes ani1 {
+  0% {
+    opacity: 5%;
+  }
+  50% {
+    opacity: 30%;
+  }
 }
 
 #home h1 {
@@ -118,6 +134,8 @@ h2 {
   font-size: 18px;
   padding: 1% 21% 0;
 }
+
+/* About Page Styling */
 
 #about {
   text-align: justify;
