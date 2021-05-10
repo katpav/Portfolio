@@ -36,10 +36,10 @@ header, footer {
 }
 
 header {
-  background: rgba(94, 108, 116, 0.25);
-  border-radius: 0 0 15px 15px;
+  background: rgba(94,108,116,.25);
+  border-radius: 0 0 20px 20px;
   backdrop-filter: blur(2px);
-  box-shadow: 0 8px 10px -8px #030d18;
+  box-shadow: 0 8px 30px -8px #030d18c0;
   font-size: 18px;
 }
 
@@ -49,6 +49,7 @@ footer {
 
 footer ul li img {
   width: 25px;
+  filter: drop-shadow(0 0 5px #000);
 }
 footer ul li #in {
   width: 28px;
@@ -100,6 +101,13 @@ h2 {
 
 #home, #about, #skills, #projects {
   height: 100vh;
+}
+
+#home {
+  padding-top: 18%;
+}
+
+#skills, #projects {
   padding-top: 12%;
 }
 
@@ -139,4 +147,31 @@ h2 {
 
 #about {
   text-align: justify;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-items: center; /* justify & align -items together */
+}
+
+#about img {
+  width: 320px;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,.3));
+}
+
+/* Skills Page Styling */
+
+#hook {
+  height: 80%;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  place-self: start;
+  background-color: rgba(0,0,0,.3);
+  border-radius: 20px;
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0,0,0,.5);
+}
+
+#skills ul li {
+  list-style: none;
 }
