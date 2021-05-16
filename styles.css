@@ -9,6 +9,7 @@
 /* Box Sizing with Inheritance/The Box Model fix */
 html {
 	box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -233,3 +234,12 @@ article {
     font-size: 14px;
   }
 }
+
+/* Plan:
+1. Responsive Navigation Menu - with icons & JS
+2. Re-write media queries for larger screens, where grids are applied & delete them from general CSS
+3. Write media queries for smaller screens - for image, font-size & spaces between sections
+4. If nothing works - switch vh lenght for %, re-style
+
+
+*/
