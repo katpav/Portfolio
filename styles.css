@@ -29,10 +29,6 @@ body {
   color:#f7fbfc;
 }
 
-body img {
-  width: 1200px;
-}
-
 header, footer {
   display: flex;
   justify-content: center;
@@ -109,20 +105,22 @@ section {
   height: 100vh;
 }
 
-#home {
-  padding-top: 18%;
-}
-
 #skills, #projects {
   padding-top: 12%;
 }
 
 /* Home Page Styling */
 
-/* re-writing padding here */
+.home-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #home {
-  text-align: center;
-  padding-top: 20%;
   animation: ani1 3s linear;
 }
 
@@ -202,3 +200,36 @@ article {
   border-radius: 20px;
 }
 
+/* Optimization for smaller screens */
+@media screen and (max-width:980px){
+  #home h1, #home h2 {
+    text-align: center;
+  }
+  #home h1 {
+    font-size: 60px;
+  }
+
+  #home h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:480px){
+  /*Home Struggle*/
+  #home h1 {
+    font-size: 40px;
+  }
+
+  #home h2, #about h1 {
+    font-size: 18px;
+  }
+
+  #home p {
+    font-size: 14px;
+    padding: 1% 6% 0;
+  }
+ 
+  #about p {
+    font-size: 14px;
+  }
+}
