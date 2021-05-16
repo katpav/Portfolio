@@ -89,6 +89,10 @@ a:hover {
   text-underline-offset: 40%;
 }
 
+nav ul li.active a {
+  color: var(--yellow-o);
+}
+
 main {
   width: 90%;
   margin: 0 auto;
