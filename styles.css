@@ -236,6 +236,7 @@ article {
 }
 
 /* Plan:
+0. Style menu button, when it is on this page at the moment
 1. Responsive Navigation Menu - with icons & JS
 2. Re-write media queries for larger screens, where grids are applied & delete them from general CSS
 3. Write media queries for smaller screens - for image, font-size & spaces between sections
