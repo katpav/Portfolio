@@ -93,6 +93,14 @@ nav ul li.active a {
   color: var(--yellow-o);
 }
 
+#responsive {
+  display: none;
+}
+
+#responsive img {
+  width: 55px;
+}
+
 main {
   width: 90%;
   margin: 0 auto;
@@ -207,6 +215,14 @@ article {
 
 /* Optimization for smaller screens */
 @media screen and (max-width:980px){
+  header img {
+    margin-right: 20%;
+  }
+
+  nav ul li a {
+    margin: 0;
+  }
+
   #home h1, #home h2 {
     text-align: center;
   }
@@ -229,18 +245,16 @@ article {
     font-size: 18px;
   }
 
-  #home p {
+  p {
     font-size: 14px;
-    padding: 1% 6% 0;
   }
- 
-  #about p {
-    font-size: 14px;
+
+  #home p {
+    padding: 1% 2% 0;
   }
 }
 
 /* Plan:
-0. Style menu button, when it is on this page at the moment
 1. Responsive Navigation Menu - with icons & JS
 2. Re-write media queries for larger screens, where grids are applied & delete them from general CSS
 3. Write media queries for smaller screens - for image, font-size & spaces between sections
