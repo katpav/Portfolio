@@ -245,7 +245,7 @@ article {
     font-size: 18px;
   }
 
-  p {
+  p, #home p {
     font-size: 14px;
   }
 
