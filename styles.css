@@ -32,13 +32,13 @@ body {
 
 header, footer {
   display: flex;
-  justify-content: center;
   padding: 20px;
   width: 100%;
   position: fixed;
 }
 
 header {
+  justify-content: space-between;
   background: rgba(94,108,116,.25);
   border-radius: 0 0 20px 20px;
   backdrop-filter: blur(2px);
@@ -47,6 +47,7 @@ header {
 }
 
 footer {
+  justify-content: center;
   bottom: 0;
 }
 
@@ -58,19 +59,26 @@ footer ul li #in {
   width: 28px;
 }
 
-header img {
+.logo img {
   width: 70px;
-  margin-right: 30%;
+  margin-left: 70%;
 }
 
 nav {
-  width: 40%;
   float: right;
+  margin-right: 5%;
 }
 
 nav ul, footer ul {
   list-style: none;
   display: flex;
+}
+
+nav ul {
+  justify-content: flex-end;
+}
+
+footer ul {
   justify-content: center;
 }
 
@@ -93,11 +101,16 @@ nav ul li.active a {
   color: var(--yellow-o);
 }
 
-#responsive {
+.menu_btn {
+  position: absolute;
+  top: 1.6rem;
+  right: 3rem;
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#responsive img {
+.menu_btn img {
   width: 55px;
 }
 
@@ -235,7 +248,40 @@ article {
   }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:680px){
+  .menu_btn {
+    display: flex;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul{
+    display: none;
+    flex-direction: column;
+  }
+
+  nav ul li{
+    text-align: center;
+  }
+
+  nav ul li a {
+    padding: .5rem 1rem;
+  }
+
+  ul.active {
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width:540px){
   /*Home Struggle*/
   #home h1 {
     font-size: 40px;
