@@ -43,7 +43,6 @@ header {
   border-radius: 0 0 20px 20px;
   backdrop-filter: blur(2px);
   box-shadow: 0 8px 30px -8px #030d18c0;
-  font-size: 18px;
 }
 
 footer {
@@ -65,7 +64,6 @@ footer ul li #in {
 }
 
 nav {
-  float: right;
   margin-right: 5%;
 }
 
@@ -76,10 +74,6 @@ nav ul, footer ul {
 
 nav ul {
   justify-content: flex-end;
-}
-
-footer ul {
-  justify-content: center;
 }
 
 nav ul li a, footer ul li a{
@@ -138,8 +132,7 @@ section {
 /* Home Page Styling */
 
 .home-wrapper {
-  height: 100%;
-  width: 100%;
+  height: 100%; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,7 +163,7 @@ section {
 
 #home p {
   font-size: 18px;
-  padding: 1% 21% 0;
+  padding: 1% 22% 0;
 }
 
 /* About Page Styling */
@@ -213,10 +206,10 @@ section {
 /* Projects Page Styling */
 
 .projects-container {
+  height: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 80%;
 }
 
 article {
@@ -228,10 +221,7 @@ article {
 
 /* Optimization for smaller screens */
 @media screen and (max-width:980px){
-  header img {
-    margin-right: 20%;
-  }
-
+  
   nav ul li a {
     margin: 0;
   }
