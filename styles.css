@@ -170,10 +170,6 @@ section {
 
 #about {
   text-align: justify;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 2%;
-  place-items: center; /* justify & align -items together */
 }
 
 #about img {
@@ -185,10 +181,6 @@ section {
 
 .skill-container {
   height: 80%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
-  place-self: start;
 }
 
 .skill-container ul li {
@@ -236,6 +228,24 @@ article {
   #home h2 {
     font-size: 30px;
   }
+}
+
+@media screen and (min-width:681px){
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2%;
+    place-items: center; /* justify & align -items together */
+  }
+
+  .skill-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    place-self: start;
+  }
+
+  
 }
 
 @media screen and (max-width:680px){
@@ -289,12 +299,3 @@ article {
     padding: 1% 2% 0;
   }
 }
-
-/* Plan:
-1. Responsive Navigation Menu - with icons & JS
-2. Re-write media queries for larger screens, where grids are applied & delete them from general CSS
-3. Write media queries for smaller screens - for image, font-size & spaces between sections
-4. If nothing works - switch vh lenght for %, re-style
-
-
-*/
