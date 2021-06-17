@@ -245,7 +245,6 @@ article {
     place-self: start;
   }
 
-  
 }
 
 @media screen and (max-width:680px){
@@ -277,6 +276,29 @@ article {
 
   ul.active {
     display: flex;
+  }
+
+  #about img {
+    width: 50%;
+  }
+
+  .about-image {
+    display: block;
+    text-align: center;
+  }
+
+  .skill-item {
+    margin: 1em 5em;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  article {
+    height: 40%;
+    width: 40%;
   }
 
 }
