@@ -27,3 +27,40 @@ const navLinks = document.querySelector('ul')
 menu.addEventListener('click', () => {
   navLinks.classList.toggle('active')
 })
+
+//Elements reveal on scroll - borrowed, need to understand - HOW & WHY
+/* window.onload = function() {
+  const effect1 = document.querySelector('#about')
+
+  window.addEventListener('scroll', scrollEffect)
+
+  function scrollEffect() {
+    if(window.scrollY>=500) {
+      effect1.style.opacity = '1';
+      effect1.style.transform = 'translateX(0px)';
+      effect1.style.transition = '1s ease-in-out';
+    }
+    else {
+      effect1.style.opacity = '0';
+      effect1.style.transform = 'translateX(-50px)'; //change
+    }
+  }
+} */
+
+/* window.onload = function() {
+  const effect2 = document.querySelector('#skills')
+
+  window.addEventListener('scroll', scrollEffect)
+
+  function scrollEffect() {
+    if(window.scrollY>=1000) {  //how to get Y
+      effect2.style.opacity = '1';
+      effect2.style.transform = 'translateY(0px)';
+      effect2.style.transition = '1s ease-in-out';
+    }
+    else {
+      effect2.style.opacity = '0';
+      effect2.style.transform = 'translateY(20px)';  //change
+    }
+  }
+} */
