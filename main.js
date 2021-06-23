@@ -21,8 +21,8 @@ window.addEventListener('scroll', ()=> {
 })
 
 //Responsive Nav Menu
-const menu = document.getElementsByClassName('menu_btn')[0]
-const navLinks = document.getElementsByTagName('ul')[0]
+const menu = document.querySelector('.menu_btn')
+const navLinks = document.querySelector('ul')
 
 menu.addEventListener('click', () => {
   navLinks.classList.toggle('active')
