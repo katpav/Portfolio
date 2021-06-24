@@ -72,6 +72,7 @@ nav {
 nav ul, footer ul {
   list-style: none;
   display: flex;
+  margin-top: 10px;
 }
 
 nav ul {
@@ -190,7 +191,7 @@ section {
 }
 
 .about-text {
-  transform: translate(50px, 0px);  
+  transform: translate(-50px, 0px);  
   opacity: 0;
   transition: all 0.8s ease 0.2s;
 }
