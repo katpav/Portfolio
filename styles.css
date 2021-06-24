@@ -141,18 +141,26 @@ section {
   justify-content: center;
 }
 
-#home {
-  animation: ani1 3s linear;
+.home-title {
+  transform: translate(0px, 120%);  
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 
-/* animation activity */
-@keyframes ani1 {
-  0% {
-    opacity: 5%;
-  }
-  50% {
-    opacity: 30%;
-  }
+.home-title._scroll {
+  transform: translate(0px, 0px);  
+  opacity: 1;
+}
+
+.home-text {
+  transform: translate(0px, 120%);  
+  opacity: 0;
+  transition: all 0.8s ease 0.5s;
+}
+
+.home-text._scroll {
+  transform: translate(0px, 0px);  
+  opacity: 1;
 }
 
 #home h1 {
