@@ -148,18 +148,13 @@ section {
   transition: all 0.8s ease 0s;
 }
 
-.home-title._scroll {
-  transform: translate(0px, 0px);  
-  opacity: 1;
-}
-
 .home-text {
   transform: translate(0px, 120%);  
   opacity: 0;
   transition: all 0.8s ease 0.5s;
 }
 
-.home-text._scroll {
+.home-title._scroll, .home-text._scroll {
   transform: translate(0px, 0px);  
   opacity: 1;
 }
@@ -180,14 +175,9 @@ section {
 /* About Page Styling */
 
 .about-title {
-  transform: translate(0px, 120%);  
+  transform: translate(-50px, 0px);  
   opacity: 0;
   transition: all 0.8s ease 0s;
-}
-
-.about-title._scroll {
-  transform: translate(0px, 0px);  
-  opacity: 1;
 }
 
 .about-text {
@@ -196,7 +186,7 @@ section {
   transition: all 0.8s ease 0.2s;
 }
 
-.about-text._scroll {
+.about-title._scroll, .about-text._scroll {
   transform: translate(0px, 0px);  
   opacity: 1;
 }
@@ -233,20 +223,10 @@ section {
   transition: all 0.8s ease 0s;
 }
 
-.skill-item._scroll {
-  transform: translate(0px, 0px);  
-  opacity: 1;
-}
-
 .skill-title {
   transform: translate(0px, 100px);  
   opacity: 0;
   transition: all 0.8s ease 0.3s;
-}
-
-.skill-title._scroll {
-  transform: translate(0px, 0px);  
-  opacity: 1;
 }
 
 .skill-text {
@@ -255,7 +235,7 @@ section {
   transition: all 0.8s ease 0.5s;
 }
 
-.skill-text._scroll {
+.skill-item._scroll, .skill-title._scroll, .skill-text._scroll {
   transform: translate(0px, 0px);  
   opacity: 1;
 }
