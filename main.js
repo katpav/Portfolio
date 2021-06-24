@@ -48,14 +48,16 @@ if (animItems.length > 0) {
       if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
         animItem.classList.add('_scroll');
       } else {
-        animItem.classList.remove('_scroll');
+        if(!animItem.classList.contains('anim-no-repeat')) {
+          animItem.classList.remove('_scroll');
+        }
       }
     }
   }
   function offset(el) {
     const rect = el.getBoundingClientRect(),
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
   }
   animOnScroll();

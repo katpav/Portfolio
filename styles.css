@@ -178,6 +178,28 @@ section {
 
 /* About Page Styling */
 
+.about-title {
+  transform: translate(0px, 120%);  
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.about-title._scroll {
+  transform: translate(0px, 0px);  
+  opacity: 1;
+}
+
+.about-text {
+  transform: translate(50px, 0px);  
+  opacity: 0;
+  transition: all 0.8s ease 0.2s;
+}
+
+.about-text._scroll {
+  transform: translate(0px, 0px);  
+  opacity: 1;
+}
+
 #about {
   text-align: justify;
 }
@@ -203,6 +225,37 @@ section {
   padding-top: 20px;
   text-align: center;
   text-shadow: 2px 4px 3px rgba(0,0,0,.5);
+
+  transform: translate(0px, 150px);  
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.skill-item._scroll {
+  transform: translate(0px, 0px);  
+  opacity: 1;
+}
+
+.skill-title {
+  transform: translate(0px, 100px);  
+  opacity: 0;
+  transition: all 0.8s ease 0.3s;
+}
+
+.skill-title._scroll {
+  transform: translate(0px, 0px);  
+  opacity: 1;
+}
+
+.skill-text {
+  transform: translate(0px, 100px);  
+  opacity: 0;
+  transition: all 0.8s ease 0.5s;
+}
+
+.skill-text._scroll {
+  transform: translate(0px, 0px);  
+  opacity: 1;
 }
 
 /* Projects Page Styling */
@@ -219,6 +272,23 @@ article {
   text-align: center;
   background-color: rgba(187, 170, 18, 0.507);
   border-radius: 20px;
+}
+
+.project-item {
+  transform: translate(0px, 150px);  
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.project-title {
+  transform: translate(0px, 100px);  
+  opacity: 0;
+  transition: all 0.8s ease 0.3s;
+}
+
+.project-item._scroll, .project-title._scroll {
+  transform: translate(0px, 0px);  
+  opacity: 1;
 }
 
 /* Optimization for smaller screens */
