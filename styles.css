@@ -206,6 +206,7 @@ section {
 }
 
 #about img {
+  max-width: 100%;
   width: 320px;
   filter: drop-shadow(0 0 10px var(--black-o));
 }
@@ -309,6 +310,7 @@ article {
   #home h2 {
     font-size: 30px;
   }
+
 }
 
 @media screen and (min-width:681px){
