@@ -24,7 +24,7 @@ html {
 /* General Styling */
 
 body {
-  background: url("images/colin-lloyd-s.jpg") no-repeat center/cover; /* low-quality first */
+  background: url("images/colin-lloyd-xs.jpg") no-repeat center/cover; /* low-quality first */
   background: url("images/colin-lloyd-l.jpg") no-repeat center/cover;
   font: 17px/1.5 'Jost', sans-serif;
   text-shadow: 2px 4px 3px var(--black-o);
