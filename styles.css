@@ -204,6 +204,10 @@ h1 {
   filter: drop-shadow(0 0 10px var(--black-o));
 }
 
+#about p {
+  padding-top: .8em;
+}
+
 /* Skills Page Styling */
 
 .skill-container {
