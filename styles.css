@@ -253,9 +253,10 @@ h1 {
   height: 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center; /*space-evenly*/
+  align-content: center; /*delete later*/
 }
-
+/*
 article {
   width: 20%;
   text-align: center;
@@ -279,7 +280,7 @@ article {
   transform: translate(0px, 0px);  
   opacity: 1;
 }
-
+*/
 /* Optimization for smaller screens */
 @media screen and (max-width:980px){
   
