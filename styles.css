@@ -46,6 +46,11 @@ header {
   z-index: 1;
 }
 
+header img:hover {
+  transform: scale(1.1);
+  transition: all 0.8s ease 0s;
+}
+
 footer {
   justify-content: center;
   bottom: 0;
@@ -378,16 +383,16 @@ h1 {
     margin: 1em 5em;
   }
 
-  .project-item {
-    margin-top: 1em;
-  }
-
   .project-item img {
-    height: 70%;
+    height: 50%;
   }
 }
 
 @media screen and (max-width:540px){
+  body {
+    background-size: auto;
+  }
+
   /*Home Struggle*/
   h1 {
     font-size: 25px;
